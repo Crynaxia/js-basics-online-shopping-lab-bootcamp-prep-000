@@ -27,8 +27,6 @@ function viewCart() {
   for(var item of tmpCart) {
     
   }
-  
-  
 }
 
 function total() {
