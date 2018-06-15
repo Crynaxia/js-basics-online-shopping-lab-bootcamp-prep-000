@@ -41,7 +41,7 @@ function total() {
   
   
   
-  return cart.sum(x => x.itemPrice);
+  return cart.reduce(cart.map(x => x.itemPrice));
 }
 
 function removeFromCart(item) {
