@@ -17,7 +17,10 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  // write your code here
+  if(!cart || !cart.length) {
+    return "Your cart is empty.";  
+  }
+  
 }
 
 function total() {
