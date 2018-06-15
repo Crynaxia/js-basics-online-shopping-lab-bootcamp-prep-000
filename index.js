@@ -49,7 +49,7 @@ function total() {
 function removeFromCart(item) {
   var i = cart.find(x => x.itemName === item);
   if(!i) {
-    return ''
+    return 'That item is not in your cart.';
   } 
   cart.remove(i);
   return cart;
