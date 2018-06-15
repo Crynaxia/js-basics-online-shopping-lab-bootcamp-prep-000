@@ -48,7 +48,11 @@ function total() {
 
 function removeFromCart(item) {
   var i = cart.find(x => x.itemName === item);
+  if(!i) {
+    return ''
+  } 
   cart.remove(i);
+  return cart;
 }
 
 function placeOrder(cardNumber) {
