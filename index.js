@@ -28,7 +28,7 @@ function viewCart() {
     if(item !== tmpCart[0]) {
       result += ', ';
     }
-    if(item === tmpCart[item.length-1]) {
+    if(tmpCart.length > 1 && item === tmpCart[item.length-1]) {
       result += ' and ';
     }
     result += item.itemName + ' at $' + item.itemPrice;
