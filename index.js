@@ -22,11 +22,19 @@ function viewCart() {
     return 'Your cart is empty.';  
   }
   
-  string result = 'In your cart, you have';
+  var result = 'In your cart, you have ';
   
   for(var item of tmpCart) {
-    
+    if(item !== tmpCart[0]) {
+      result += ', ';
+    }
+    if(item === tmpCart[item.length-1]) {
+      result += ' and ';
+    }
+    result += item.itemName + ' at $' + item.itemPrice;
   }
+  result += '.';
+  return result;
 }
 
 function total() {
