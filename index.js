@@ -47,7 +47,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
+  var i = cart.find(x => x.itemName === item);
+  cart.remove(i);
 }
 
 function placeOrder(cardNumber) {
