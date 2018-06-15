@@ -29,7 +29,7 @@ function viewCart() {
       result += ', ';
     }
     if(tmpCart.length > 1 && item === tmpCart[tmpCart.length-1]) {
-      result += ' and ';
+      result += 'and ';
     }
     result += item.itemName + ' at $' + item.itemPrice;
   }
