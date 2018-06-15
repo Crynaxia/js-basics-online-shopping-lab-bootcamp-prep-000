@@ -19,13 +19,13 @@ function addToCart(item) {
 function viewCart() {
   var tmpCart = cart;
   if(!tmpCart || !tmpCart.length) {
-    return 'Your cart is empty.';  
+    return 'Your shopping cart is empty.';  
   }
   
   var result = 'In your cart, you have ';
   
   for(var item of tmpCart) {
-    if(item !== tmpCart[0]) {
+    if(tmpCart.length > 1 && item !== tmpCart[0]) {
       result += ', ';
     }
     if(tmpCart.length > 1 && item === tmpCart[item.length-1]) {
