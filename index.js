@@ -39,9 +39,12 @@ function viewCart() {
 
 function total() {
   
-  
-  
-  return cart.reduce(cart.map(x => x.itemPrice));
+  var result = 0;
+  for (var item of cart)
+  {
+    result += item.itemPrice;
+  }
+  return result;
 }
 
 function removeFromCart(item) {
