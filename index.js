@@ -52,7 +52,7 @@ function removeFromCart(item) {
     return 'That item is not in your cart.';
   } 
   var index = cart.indexOf(i);
-  cart.splice();
+  cart.splice(index, 1);
   return cart;
 }
 
