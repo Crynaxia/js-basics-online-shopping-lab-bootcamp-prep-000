@@ -17,9 +17,15 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var tmpCart = cart;
   if(!cart || !cart.length) {
-    return "Your cart is empty.";  
+    return 'Your cart is empty.';  
   }
+  
+  string result = 'In your cart, you have';
+  
+  for(var item of )
+  
   
 }
 
