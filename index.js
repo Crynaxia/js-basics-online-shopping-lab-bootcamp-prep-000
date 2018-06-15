@@ -38,7 +38,10 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  
+  
+  
+  return cart.sum(x => x.itemPrice);
 }
 
 function removeFromCart(item) {
